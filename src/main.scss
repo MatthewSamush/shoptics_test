@@ -1,0 +1,302 @@
+$fontStyle: "Helvetica", sans-serif;
+
+// COLORS
+$bgColor: #fff;
+$green: #72B81F; // Secondary
+$blue: #3B4D6A; // Main Text
+
+.mainWrapper {
+  background-color: $bgColor;
+  margin: 0px;
+}
+.logoSection{
+  position: absolute;
+  width: 100%;
+  height: 63px;
+  background-color: #F5F7ED;
+  z-index:9;
+}
+.logo-section-grid {
+  width: 70%;
+  height: 63px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  color: $green;
+}
+.grid-section{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.grid-section-menu {
+  align-items: center;
+  justify-content: center;
+  height:63px;
+  display: flex;
+}
+.section-left img{
+  margin-top: 10px;
+}
+.section-right{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.grid-inline{
+  display: inline-block;
+  margin:0px 10px 0px 10px;
+}
+.mainHeader {
+  position: absolute;
+  margin-top: 63px;
+  width: 100%;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  background-color: #F0F2EB;
+  z-index:8;
+}
+.menu-select{
+  width:124px;
+  height:40px;
+  margin: 25px 0px;
+  font-size: 0.75rem;
+  padding: 10px 5px;
+}
+.section-grid-layout{
+  width: 70%;
+  height: 85px;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+  color: $blue;
+}
+.search-input{
+  width: 400px;
+  height:30px;
+  margin: 20px 10px;
+  padding: 5px 10px;
+}
+.search-button{
+  width:100px;
+  height:40px;
+  border-radius: 3px;
+  background-color: $blue;
+  color: $bgColor;
+}
+.account-menu {
+  list-style-type: none;
+}
+.acc-menu-item{
+  display: inline-block;
+  margin: 20px 10px;
+  text-align: center;
+}
+.acc-menu-item p {
+  font-weight: 600;
+}
+.contentSection{
+  width: 70%;
+  height: 400px;
+  margin: 0 auto;
+  background-color: $bgColor;
+  z-index: 7;
+}
+.sliderWrapper{
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width:250px;
+
+  // Cards Style
+  &__contentBox{
+    position:absolute;
+    width: 100%;
+    display:block;
+    background-color:white;
+    overflow: hidden;
+  }
+
+  &__contentSlidesBox {
+    display: flex;
+    margin-left: -100%;
+    margin-top: 60px;
+    width: 100%;
+    justify-content: space-between;
+    transition: 0.5s;
+  }
+
+  &__card{
+    width:100%;
+    display: flex;
+  }
+
+  &__card img{
+    width:1800px;
+  }
+
+  // Button Styles
+  &__buttoBox {
+    justify-content: center;
+    font-size:24px;
+    display: inline-block;
+  }
+  &__button {
+    background-color: #373737;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px;
+  }
+}
+.welcomeTextBlock{
+  position: absolute;
+  width:100%;
+  margin: auto;
+  text-align: center;
+  top:180px;
+}
+.welcomeTextBlock > .first-line, .second-line, .shop-now{
+  padding: 10px;
+  color: $blue;
+}
+.first-line {
+  font-size: 2rem;
+}
+.second-line {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.shop-now {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.switchButton {
+  background-color: #373737;
+  color: white;
+  border:  0;
+  padding: 10px;
+  height: 200px;
+}
+.radioWrapper {
+  width:350px;
+  height: 50px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #373737;
+  margin: 0px 10px 0px 10px;
+}
+.radioButtonBox {
+  display: inline-block;
+  justify-content: center;
+}
+.radioButton {
+  width:25px;
+  height: 25px;
+}
+.radioLabels{
+  width:20px;
+  height:20px;
+}
+.radioSelector{
+  display: inline-block;
+  margin: 0px 5px;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  font-size:1.2rem;
+  background-color: #373737;
+  border-radius: 20px;
+  border:1px solid #fff;
+}
+.radioButton:checked ~ .radioSelector{
+  border:0;
+  background-color: $bgColor;
+  color:#373737;
+}
+.radioLabels input{
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.radioDisplayNone {
+
+}
+@media (max-width: 550px){
+  .mainWrapper {
+    width:450px;
+  }
+  .sliderWrapper{
+    width:450px;
+
+    &__contentBox{
+      width: 350px;
+    }
+    &__card{
+      width: 100%;
+      min-width: 350px;
+    }
+    &__card img {
+      width:100%;
+      min-width: 350px;
+    }
+
+  }
+}
+.slider-navigation{
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  color: #373737;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px 5px 10px;
+}
+@media (max-width: 450px){
+  .mainWrapper {
+    width:350px;
+  }
+  .sliderWrapper{
+    width: 350px;
+
+    &__contentBox{
+      width: 250px;
+    }
+    &__card{
+      width: 100%;
+      min-width: 250px;
+    }
+    &__card img {
+      width:100%;
+      min-width: 250px;
+    }
+
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $bgColor;
+  font-family: $fontStyle;
+  font-size: 0.85rem;
+}
+p{
+  font-family: $fontStyle;
+}
+a {
+  text-decoration: none;
+  color:$blue;
+  font-weight: bold;
+}
