@@ -1,5 +1,9 @@
-# slider
-Slider using only React Core Library. Stack: HTML,CSS/SASS,Webpack,Node,yarn/npm.
+# shoptics
+Test from Intersys. Webpage creation.
+
+Stack:
+HTML,CSS/SASS,ReactJs,Javascript,Webpack,babel,yarn/npm.
+
 1. Setup the Application
 
 
@@ -11,7 +15,7 @@ Slider using only React Core Library. Stack: HTML,CSS/SASS,Webpack,Node,yarn/npm
     
     - Create folder for the project.
     - Open the folder in your IDEA.
-    - Open terminal and run following command: git clone https://github.com/MatthewSamush/slider.git
+    - Open terminal and run following command: git clone https://github.com/MatthewSamush/shoptics_test.git
     ------------------------------------------------------------------------------------------------
     
     - Open Terminal in your IDEA and run: | npm install OR yarn install |
