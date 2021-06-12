@@ -6,13 +6,11 @@ const RadioButtons = ({slides, onChange, currentElement}) => {
     return (
         <div className="radioButtonBox">
                 {slides.map(slide =>
-                    <div className="radioSelector">
                     <label className="radioLabels">
                     <input key={slide.id} value={slide.id} checked={currentElement === slide.id} onChange={onChange} type="radio"
                            className="radioButton radioDisplayNone"/>
-                           <span className="radioValueText">{slide.id + 1}</span>
+                        <span className="radioValueText">{slide.id + 1}</span>
                     </label>
-                    </div>
                 )}
         </div>
     )
